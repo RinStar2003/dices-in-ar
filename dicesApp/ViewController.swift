@@ -49,6 +49,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         print("Tapped")
 
         if let touch = touches.first {
@@ -95,6 +96,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             }
             node.position = SCNVector3(x,y,z)
             node.scale = SCNVector3(0.001,0.001,0.001)
+            
             sceneView.scene.rootNode.addChildNode(node)
             
             isTableAdded = true
