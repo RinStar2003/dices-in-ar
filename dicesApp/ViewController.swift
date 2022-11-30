@@ -72,7 +72,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                     diceArray.append(diceNode)
                     
                     sceneView.scene.rootNode.addChildNode(diceNode)
-                    
                 }
             }
         }
@@ -105,8 +104,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-        guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
         
+        guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
         print("plane updated")
     }
 }
