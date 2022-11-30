@@ -102,7 +102,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
         
         print("Model placed")
-        print("ra")
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
