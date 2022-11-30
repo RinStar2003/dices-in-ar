@@ -100,7 +100,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             isTableAdded = true
         }
+        
         print("Model placed")
+        
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
