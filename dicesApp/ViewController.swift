@@ -101,6 +101,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             isTableAdded = true
         }
         
+        
         print("Model placed")
     }
     
